@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Aboutus_Menu" xml:space="preserve">
+    <value>ABOUT US</value>
+    <comment>About Us page title</comment>
+  </data>
+  <data name="AbtUs_ParaText" xml:space="preserve">
+    <value>Justice Inn is a “Consortium of Legend Lawyers,” the first of its kind in Pakistan. Our team comprises of several legal dignitaries that have served on some of the highest legal positions in the country. From former Justices of Supreme Court and High courts of Pakistan and offices of an attorney general, Advocate general, Prosecutor general and our team has the aces of the sector.
+
+Apart from that, our legal and judicial team possess exceptional legal expertise. We do not provide piecemeal solutions but provide a coherent approach towards the entire case. It enables us to meet the exigencies of the case while offer top of the line legal services to our clients.
+
+At Justice Inn, we understand existential threats that shake the foundations of our clients....</value>
+  </data>
+  <data name="Blogs_Menu" xml:space="preserve">
+    <value>BLOGS</value>
+    <comment>Blogs page title</comment>
+  </data>
+  <data name="Call_Us_At" xml:space="preserve">
+    <value>CALL US AT</value>
+  </data>
+  <data name="CertificateExcellence" xml:space="preserve">
+    <value>Certificate of Excellence</value>
+  </data>
+  <data name="Certifications_Menu" xml:space="preserve">
+    <value>CERTIFICATIONS</value>
+    <comment>Certifications page title</comment>
+  </data>
+  <data name="ChildCustody" xml:space="preserve">
+    <value>Child Custody</value>
+  </data>
+  <data name="ClientConsultation" xml:space="preserve">
+    <value>Client Consultations</value>
+  </data>
+  <data name="ClientWords" xml:space="preserve">
+    <value>WORDS FROM CLIENT</value>
+  </data>
+  <data name="ConsumerCourt" xml:space="preserve">
+    <value>Consumer Court</value>
+  </data>
+  <data name="ContactNoBtn" xml:space="preserve">
+    <value>Contact Now</value>
+  </data>
+  <data name="ContactUs_Menu" xml:space="preserve">
+    <value>CONTACT US</value>
+    <comment>Contact Us page title</comment>
+  </data>
+  <data name="Contact_Numbers" xml:space="preserve">
+    <value>+92-321-4468358 | +92-42-37350687</value>
+  </data>
+  <data name="Copyrights" xml:space="preserve">
+    <value>Copyright 2019, All Right Reserved</value>
+  </data>
+  <data name="CorporateLawyers" xml:space="preserve">
+    <value>Corporate Lawyers</value>
+  </data>
+  <data name="CriminalMatters" xml:space="preserve">
+    <value>Criminal Matters</value>
+  </data>
+  <data name="Documents" xml:space="preserve">
+    <value>DOCUMENTS</value>
+  </data>
+  <data name="Expertise" xml:space="preserve">
+    <value>WHAT WE ARE EXPERT AT</value>
+  </data>
+  <data name="Free_Consultancy" xml:space="preserve">
+    <value>Consultancy</value>
+    <comment>Part 2</comment>
+  </data>
+  <data name="Free_Online" xml:space="preserve">
+    <value>Free Online Legal</value>
+    <comment>Part 1</comment>
+  </data>
+  <data name="Home_Menu" xml:space="preserve">
+    <value>HOME</value>
+    <comment>Main Index Page Title</comment>
+  </data>
+  <data name="LabourRights" xml:space="preserve">
+    <value>Labour Rights</value>
+  </data>
+  <data name="LatestNews_Menu" xml:space="preserve">
+    <value>LATEST NEWS</value>
+    <comment>Latest News page title</comment>
+  </data>
+  <data name="LawComplication" xml:space="preserve">
+    <value>Law is complicate matter. It can cause you a big problem if you ignore it. Let us help you!</value>
+  </data>
+  <data name="Locations" xml:space="preserve">
+    <value>Locations</value>
+  </data>
+  <data name="MedicalNegligence" xml:space="preserve">
+    <value>Medical Negligence</value>
+  </data>
+  <data name="NABreferences" xml:space="preserve">
+    <value>NAB references</value>
+  </data>
+  <data name="Office" xml:space="preserve">
+    <value>OFFICE</value>
+  </data>
+  <data name="OnlineDivorce" xml:space="preserve">
+    <value>Online Divorce</value>
+  </data>
+  <data name="OnlineNikkah" xml:space="preserve">
+    <value>Online Nikkah</value>
+  </data>
+  <data name="OurCompany" xml:space="preserve">
+    <value>OUR COMPANY</value>
+  </data>
+  <data name="PoliceAssistance" xml:space="preserve">
+    <value>Police Assistance</value>
+  </data>
+  <data name="ProfesionalAttorneys" xml:space="preserve">
+    <value>Profesional Attorneys</value>
+  </data>
+  <data name="PropertyLand" xml:space="preserve">
+    <value>Property &amp; Land</value>
+  </data>
+  <data name="ReadMore_btnText" xml:space="preserve">
+    <value>READ MORE</value>
+  </data>
+  <data name="Services_Menu" xml:space="preserve">
+    <value>SERVICES</value>
+    <comment>Services page title</comment>
+  </data>
+  <data name="SiteMap" xml:space="preserve">
+    <value>Site Map</value>
+  </data>
+  <data name="SubmitMsg" xml:space="preserve">
+    <value>Submit Message</value>
+  </data>
+  <data name="SuccessfulCases" xml:space="preserve">
+    <value>Successful Cases</value>
+  </data>
+  <data name="SuccessionCertificate" xml:space="preserve">
+    <value>Succession Certificate</value>
+  </data>
+  <data name="Testimonial" xml:space="preserve">
+    <value>Testimonial</value>
+  </data>
+  <data name="TestimonialExample" xml:space="preserve">
+    <value>When young Katie Mitchell (Abbi Jacobson) heads on a road trip with her family</value>
+  </data>
+  <data name="WhyReason1" xml:space="preserve">
+    <value>It’s important to have a competent legal team at your side at the time of dire need. Legal processes are not only a hassle because you don’t understand legal terminologies but because there also not many firms that provide unparalleled expertise and consultation.</value>
+  </data>
+  <data name="WhyReason2" xml:space="preserve">
+    <value>It’s important to have a competent legal team at your side at the time of dire need. Legal processes are not only a hassle because you don’t understand legal terminologies but because there also not many firms that provide unparalleled expertise and consultation.</value>
+  </data>
+  <data name="WhyUs" xml:space="preserve">
+    <value>Why Clients Choose Us?</value>
+  </data>
+</root>

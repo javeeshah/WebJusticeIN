@@ -1,0 +1,120 @@
+﻿
+
+<div class="row">
+    <div class="col-6 pt-2"><h3 style="color:white">Blogs</h3></div>
+    <div class="col-6 text-right pt-2">
+            <div class="btn-group pull-right">
+                <button type="button" class="btn btn-primary fa fa-plus" data-toggle="modal" data-target="" onclick=""></button>
+            </div>
+        </div>
+</div>
+<div class="row border-top">
+    <div class="col-lg-12">
+        <div class="demo-container">
+            <div class="row" id="buttonGroup">
+                <div class="row-element" id="print"></div>
+                <div class="row-element" id="export"></div>
+            </div>
+            <div id="gridContainer"></div>
+        </div>
+        <div class="form-group grpctrl">
+            <table class="table table-bordered table-hover" id="SearchStudentList">
+                <thead>
+                </thead>
+                <tbody class="tbody"></tbody>
+                <tfoot id="tfoot">
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+<style>
+    .dx-scrollable-scroll-content {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(100, 100, 100, 0.7) !important;
+        -webkit-box-shadow: 0 0 0 1px transparent;
+        box-shadow: 0 0 0 1px transparent;
+    }
+
+    div#SearchStudentList_paginate {
+        float: left !important;
+        text-align: unset !important;
+        padding-top: 0.25em;
+        margin-left: 20px !important;
+    }
+
+    .dt-buttons {
+        text-align: left;
+    }
+</style>
+@section scripts {
+    @*<script type="~/Content/text/javascript">
+                    $('#AddBudgetModel #exampleModalLongTitle').text('')
+                    $('#AddBudgetModel #exampleModalLongTitle').text('Add Blog')
+                    $('#AddBudgetModel').modal('show');
+        </script>*@
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            ShowBlogList();
+        });
+
+        function ShowBlogList() {
+            $.ajax({
+                type: "GET",
+                url: '@Url.Action("GetBlogList", "Blog")',
+                async: false,
+                cache: false,
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    $("#gridContainer").dxDataGrid({                        
+                        dataSource: data,
+                        columns: [
+                            { dataField: "BlogId", caption: "Blog Id" },
+                            { dataField: "BlogNumber", caption: "Blog No"},
+                            { dataField: "BlogTitle", caption: "Blog Title" },
+                            { dataField: "BlogSummary", caption: "Blog Summary" },
+                            { dataField: "IsPublished", caption: "Published" },
+                            { dataField: "AuthorName", caption: "Author" },
+                            { dataField: "CreatedBy", caption: "Created By" },
+                        ],
+                        showBorders: true,
+                        hoverStateEnabled: true,
+                        loadPanel: { enabled: false },
+                        //columnMinWidth: 100,
+                        //customizeColumns: function (columns) {
+                        //    columns[0].visible = false;
+                        //    columns[0].width = 100;
+                        //    columns[1].width = 100;
+                        //    columns[2].width = 120;                            
+                        //    columns[4].width = 100;
+                        //    columns[5].width = 100;
+                        //},
+                        
+                        rowAlternationEnabled: true,
+                        scrolling: { mode: 'infinite' },
+                        sorting: { mode: "multiple" },
+                        grouping: { autoExpandAll: true, },
+                        searchPanel: { visible: true },
+                        headerFilter: { visible: true },
+                        groupPanel: { visible: true },
+                        filterRow: { visible: true, applyFilter: "auto" },
+                        "export": {
+                            enabled: true, fileName: "Blogs",
+                        },
+                    });
+                },
+                error: function (ex) {
+                    var r = jQuery.parseJSON(response.responseText);
+                    alert("Message: " + r.Message);
+                    alert("StackTrace: " + r.StackTrace);
+                    alert("ExceptionType: " + r.ExceptionType);
+                }
+            });
+        }
+        
+
+    </script>
+}
